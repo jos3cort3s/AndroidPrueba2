@@ -1,7 +1,9 @@
-package com.agrotic.sena.www.androidsenasoft2018prueba1;
+package com.agrotic.sena.www.androidsenasoft2018prueba1.Actividades;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.agrotic.sena.www.androidsenasoft2018prueba1.R;
 
 public class MainActivity extends AppCompatActivity {
 
