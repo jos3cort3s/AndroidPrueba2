@@ -1,14 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pale_green"
     tools:context=".Fragmentos.AjustesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="@string/ajustesFragment"
+        android:gravity="center_horizontal"
+        android:textSize="23sp"
+        android:layout_marginTop="20sp"
+        android:textStyle="italic|bold"
+        android:fontFamily="casual"/>
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearCiclos"
+        android:layout_marginBottom="20sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="casual"
+            android:paddingLeft="20sp"
+            android:text="@string/cuentaMax"
+            android:textSize="23sp"
+            android:textStyle="italic|bold" />
+
+        <Spinner
+            android:id="@+id/spConteoMax"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:entries="@array/spinnerConteo"
+            android:textSize="23sp"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearCiclos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/retardo"
+            android:textSize="23sp"
+            android:paddingLeft="20sp"
+            android:textStyle="italic|bold"
+            android:fontFamily="casual"/>
+
+        <Spinner
+            android:id="@+id/spRetardoTime"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="23sp"
+            android:entries="@array/spinnerRetardo"
+            android:gravity="center_horizontal"
+            android:textStyle="italic|bold"
+            android:fontFamily="casual"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/linearCiclos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/on_offSensor"
+            android:textSize="23sp"
+            android:paddingLeft="20sp"
+            android:textStyle="italic|bold"
+            android:fontFamily="casual"/>
+
+        <ToggleButton
+            android:id="@+id/btnToggleOnOff"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:textStyle="italic|bold"
+            android:fontFamily="casual"/>
+
+    </LinearLayout>
+
+
+    <Button
+
+        android:id="@+id/btnGurdaAjuste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/btnSave"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

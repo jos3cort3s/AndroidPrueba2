@@ -2,5 +2,52 @@
     <string name="app_name">AndroidSenaSoft2018Prueba1</string>
 
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="conteofragment">Pantalla Conteo Actual</string>
+    <string name="numConteo">  # de Conteo:  </string>
+    <string name="numCiclo">  # de Ciclo:  </string>
+    <string name="btnReiniciarConteo">Reiniciar Conteo</string>
+
+
+    <string name="ajustesFragment">Pantalla de Ajustes</string>
+    <string name="cuentaMax">Conteo Maximo</string>
+    <string name="retardo">Retardo entre Detecciones</string>
+    <string name="on_offSensor">Activar/Desactivar</string>
+    <string name="btnSave">Guardar</string>
+
+
+    <string name="infoFragment">Pantalla de Informes</string>
+
+
+    <string-array name="spinnerConteo">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+    </string-array>
+
+
+    <string-array name="spinnerRetardo">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
